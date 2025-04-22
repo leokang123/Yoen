@@ -1,9 +1,9 @@
 services:
-  yeon-back:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: hyhk/yeon-back:latest
+    image: hyhk/yoen-back:latest
     ports:
       - '8080'
     env_file:

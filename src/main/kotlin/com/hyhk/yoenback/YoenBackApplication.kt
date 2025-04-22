@@ -1,11 +1,11 @@
-package com.hyhk.yeonback
+package com.hyhk.yoenback
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class YeonBackApplication
+class YoenBackApplication
 
 fun main(args: Array<String>) {
-	runApplication<YeonBackApplication>(*args)
+	runApplication<YoenBackApplication>(*args)
 }

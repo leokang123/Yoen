@@ -1,1 +1,1 @@
-rootProject.name = "yeon-back"
+rootProject.name = "yoen-back"
