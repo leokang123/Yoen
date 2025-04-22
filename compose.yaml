@@ -1,5 +1,13 @@
 services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=${DATABASE_NAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_USER=${DATABASE_USERNAME}
+    ports:
+      - '5432'
   redis:
-    image: 'redis:latest'
+    image: redis:latest
     ports:
       - '6379'
