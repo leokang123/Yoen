@@ -1,11 +1,23 @@
-HELP.md
-.gradle
+# 빌드 아티팩트
+.gradle/
 build/
+out/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-### STS ###
+# IDE 설정 파일
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+*.sw?
+.idea/runConfigurations/
+
+# STS/NetBeans 관련
 .apt_generated
 .classpath
 .factorypath
@@ -14,29 +26,51 @@ build/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+# Kotlin 전용
+.kotlin/
 
-### Kotlin ###
-.kotlin
+# OS 임시 파일
+.DS_Store
+Thumbs.db
+*.bak
+*~
+*.tmp
 
+# 로그 / 테스트 파일
+*.log
+hs_err_pid*.log
+test-output/
+*.coverage
+*.test
+
+# 환경 변수
 .env
+.env.*
+!.env.example
+
+# Docker 관련
+docker-compose.override.yml
+docker-compose.dev.yml
+.docker/
+.dockerignore
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+.restart/
+
+# Database / IDE local state
+*.db
+*.h2.db
+*.mv.db
+*.sqlite
+*.sqlite3
+
+# 실행 권한 캐시 및 빌드 lock
+*.lock
+!gradle/wrapper/gradle-wrapper.properties
