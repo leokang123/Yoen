@@ -1,4 +1,16 @@
 services:
+  yeon-back:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hyhk/yeon-back:latest
+    ports:
+      - '8080'
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
   postgres:
     image: postgres:latest
     environment:
@@ -7,7 +19,11 @@ services:
       - POSTGRES_USER=${DATABASE_USERNAME}
     ports:
       - '5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
   redis:
     image: redis:latest
     ports:
       - '6379'
+volumes:
+  postgres_data:
