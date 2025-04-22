@@ -60,3 +60,7 @@ allOpen {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.bootJar {
+	archiveFileName.set("app.jar") // ✅ 생성되는 fat-jar 이름 고정
+}

@@ -1,0 +1,16 @@
+# Build artifacts
+.gradle
+/out
+**/*.log
+
+# IDE files
+.idea
+.vscode
+*.iml
+
+# OS files
+.DS_Store
+
+# Docs
+README.md
+HELP.md
