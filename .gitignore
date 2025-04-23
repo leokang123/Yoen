@@ -75,4 +75,4 @@ docker-compose.dev.yml
 *.lock
 !gradle/wrapper/gradle-wrapper.properties
 
-resources/firebase/
+src/main/resources/firebase/
