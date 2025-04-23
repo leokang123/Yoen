@@ -74,3 +74,5 @@ docker-compose.dev.yml
 # 실행 권한 캐시 및 빌드 lock
 *.lock
 !gradle/wrapper/gradle-wrapper.properties
+
+src/main/resources/firebase/

@@ -35,6 +35,11 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.session:spring-session-data-redis")
 	implementation("org.springframework.session:spring-session-jdbc")
+
+	implementation("com.google.firebase:firebase-admin:9.4.3")
+	implementation("com.google.cloud:google-cloud-storage:2.50.0")
+
+
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
 	annotationProcessor("org.projectlombok:lombok")
