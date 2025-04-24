@@ -77,4 +77,3 @@ docker-compose.dev.yml
 
 src/main/resources/firebase/
 
-# .env파일 삭제 여부 테스트
