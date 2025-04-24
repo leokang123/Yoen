@@ -76,3 +76,5 @@ docker-compose.dev.yml
 !gradle/wrapper/gradle-wrapper.properties
 
 src/main/resources/firebase/
+
+# .env파일 삭제 여부 테스트
